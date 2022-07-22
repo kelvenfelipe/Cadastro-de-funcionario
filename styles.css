@@ -100,7 +100,7 @@
 
 .modal__container {
     width: 35%;
-    height: 55%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +139,7 @@
 
 .modal__form input {
     width: 100%;
-    padding: .4rem;
+    padding: .2rem;
     border: 0;
     border-bottom: 2px solid lightgray; 
     outline: none;
@@ -150,7 +150,7 @@
 .message__error {
     color: red;
     display: inline-block;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     padding-left: 0.5rem;
     font-size: .8rem;
 }
