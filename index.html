@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+
+            <div class="container__button">
+                <h1 >Cadastro de Funcionários</h1>
+                <button class="submit" id="registerClient">Incluir</button>
+            </div>
+
+            <table class="container__table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Salário</th>
+                        <th class="thAction">Editar</th>
+                        <th class="thAction">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal" >
+        <div class="modal__container">
+
+            <span id="modalClose"><i class='bx bxs-x-circle'></i></span>
+
+            <form class="modal__form" id="formEmployee">
+
+                <div class="modal__label">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" data-type="typeName"  required>
+                    <span class="message__error"></span>
+                </div>
+
+                <div class="modal__label">
+                    <label for="function">Função</label>
+                    <input type="text" name="employee" id="employee" data-type="typeFunction" required>
+                    <span class="message__error"></span>
+                </div>
+
+                <div class="modal__label">
+                    <label for="salary">Salário</label>
+                    <input type="number" name="salary" id="salary" data-type="typeSalary" required>
+                    <span class="message__error"></span>
+                </div>
+
+                <button type="submit" id="btnSalvar">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <script src="validacao.js"></script>
+    <script src="crud.js"></script>
+</body>
+</html>
